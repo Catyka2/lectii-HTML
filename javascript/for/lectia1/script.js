@@ -1,10 +1,14 @@
 
 //caut numerele egale cu zece intr-un vector
-
+var vector1 = []
 var v = [1,3,44,10,2]
 var indice = []
 var nrEgaleCuZece = 0
 elemente = ''
+elemente2 = ''
+var suma = 0;
+var maiMiciCaCinci =0;
+elemente3 =0;
 
 console.log(v.length)//ne spune cate elemente are vecotul v
 
@@ -47,4 +51,29 @@ rezolvarile le faci in acest fisier, apoi le faci commit apoi push pe github.
 
 //rezolvare
 
-
+for( var i=v.length; i>=0; i=i-1){ //elementele in ordine inversa
+	vector1.push(v[i]);
+}
+	$('#output').append ('<p>elementele din vector in ordine inversa:'+vector1+'</p>')
+	
+for(var i=0;i<v.length;i++){
+    suma=suma+v[i]; // suma numerelor din vector
+	if(v[i]%2 == 0){ //elementele cu numere pare
+		console.log(v[i]);
+	elemente2 += v[i];
+	}
+	
+	if(v[i]<5){
+		maiMiciCaCinci++; //nr. mai mici ca cinci
+	}
+	if(i%2==0){
+		console.log(i);
+		elemente3 += i;
+	}
+}
+$('#output').append ('<p>elementele cu indice pare sunt:'+elemente2+'</p>')
+$('#output').append ('<p>suma numerelor este:'+suma+' numere mai mici ca cinci sunt:'+maiMiciCaCinci+'</p>')
+	
+	
+	
+	
