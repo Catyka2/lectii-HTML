@@ -8,7 +8,7 @@ elemente = ''
 elemente2 = ''
 var suma = 0;
 var maiMiciCaCinci =0;
-elemente3 =0;
+elemente3 =''
 
 console.log(v.length)//ne spune cate elemente are vecotul v
 
@@ -57,21 +57,28 @@ for( var i=v.length; i>=0; i=i-1){ //elementele in ordine inversa
 	$('#output').append ('<p>elementele din vector in ordine inversa:'+vector1+'</p>')
 	
 for(var i=0;i<v.length;i++){
-    suma=suma+v[i]; // suma numerelor din vector
+    suma=suma+v[i];	// suma numerelor din vector
 	if(v[i]%2 == 0){ //elementele cu numere pare
-		console.log(v[i]);
+		console.log(v[i]);	
 	elemente2 += v[i];
+		if(i>0){ //punem virgula numai intre elemente
+				elemente2 += ',';
+		}
 	}
 	
 	if(v[i]<5){
 		maiMiciCaCinci++; //nr. mai mici ca cinci
 	}
-	if(i%2==0){
-		console.log(i);
-		elemente3 += i;
+	
+	if(i%2==0){ //indicile elementelor pare
+		console.log(v[i]);
+		if(i>0){ //punem virgula numai intre elemente
+		    elemente3 += ',';
+	    }
+		elemente3 += v[i];
 	}
 }
-$('#output').append ('<p>elementele cu indice pare sunt:'+elemente2+'</p>')
+$('#output').append ('<p>elementele cu indice pare sunt:'+elemente2+'indicile elementelor pare:'+elemente3+'</p>')
 $('#output').append ('<p>suma numerelor este:'+suma+' numere mai mici ca cinci sunt:'+maiMiciCaCinci+'</p>')
 	
 	
