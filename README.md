@@ -37,9 +37,12 @@
 * 
 
 ### Articole
-
+* [cum folosesc github](https://guides.github.com/activities/hello-world/)
 
 ### Video
+* [guthub basic](https://www.youtube.com/watch?v=0fKg7e37bQE)
+* [github desktop tutorial](https://www.youtube.com/watch?v=kFix7UDJ7LA)
+
 
 ## Librarii si CMS(optional)
 * Drupal
