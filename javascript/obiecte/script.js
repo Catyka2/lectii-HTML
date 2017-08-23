@@ -133,18 +133,18 @@ var cifra12 = parseInt(f[1]);
 cl(cifra11+cifra12+3);
 cl(cifra1+cifra2+cifra11+cifra12+3);
 
-cifre=''
-a=''
+cifre='' // ex 5
+litere=''
 for(i=0; i<numereSauCifre.length; i++){
     if(numereSauCifre[i]>='0'&& numereSauCifre[i]<='9'){
 		cifre+=numereSauCifre[i];
 	    alert('cifre sunt: '+cifre);
 	}
     else{
-		a+=numereSauCifre[i]+',';
+		litere+=numereSauCifre[i]+',';
 	}			
 }
-alert('sunt litere: '+a)
+alert('sunt litere: '+litere)
 
 
 
