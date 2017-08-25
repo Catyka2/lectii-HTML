@@ -1,4 +1,5 @@
 
+
 function cl(a){//functie pentru a afisa
 	console.log(a)
 }
@@ -66,7 +67,7 @@ g()
 function ale(){
 	alert(1)
 }
-$('button').click(ale)
+$('#btn').click(ale)
 
 function sum(v){
 	var s = 0
@@ -78,6 +79,7 @@ var ve = [2,3,6,1]
 console.log(['suma vector:',ve,sum(ve)])
 cl(sum([3,7,8]))
 
+
 /*Exercitii
 1. creaza o functie care ia un vector ca parametru si intoarce maximul
 2. creaza o functie care ia ca parametrii doua texte si intoarce cuvintele unite
@@ -86,4 +88,57 @@ cl(sum([3,7,8]))
 
 
 */
+function max(vector){// ex 1
+	var maxim =0;
+	for(i=0; i<vector.length; i++){
+		if(vector[i]>maxim){
+			maxim=vector[i];
+		} 
+	}
+	return maxim
+}
+
+var vector =[7,8,3,10,27,0]
+alert('cifra maxima este: '+max(vector));
+
+
+function doi(text1,text2){ // ex 2
+	var indiceAparitie=-1;
+	for(var i=0;i<text1.length-cauta.length; i+=1){
+		var suntEgale= 1;
+		for (var j=0;j<text2.length; j+=1){
+			if(text2[j]!=text1[j+i]){
+				suntEgale =0;
+			}
+		}
+		if(suntEgale==1){
+			indiceAparitie=i;
+			break
+		}
+	}
+	return indiceAparitie
+} 
+
+var text = 'Afara ninge si ninge'
+var cuvintul= 'ninge'
+$('#lectie').append('<p>Prima apartie a cuvantului "'+cuvintul+'" in textul "'+text+'" este la positia:'+doi(text,cuvintul)+'</p>')
+
+$('#div1').before('<p> ex 3 </p>')
+
+function lista(id, vector){ // ex 3
+	$('#'+id).html('<ul></ul>');
+	for(var i=0; i<vector.length; i+=1){
+	$('#'+id+' ul').append('<li>'+vector[i]+'</li>')
+	}
+}
+var vector1 =['mar','par','prun','cires']
+lista('div1',vector1)
+
+function culoare(id,div1){ // ex 4
+    $('#'+id).click(function(){
+		$(''+div1).css({'color':'red'})
+	})
+}
+culoare ('id12','div')
+
 
