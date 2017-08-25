@@ -4,6 +4,7 @@
 * [medium](https://medium.com/) -- articole despre programare
 * [twitter](https://twitter.com/) -- poti urmari persoane care se ocupa cu programare web
 * [stackoverflow](https://stackoverflow.com/) -- aici multe raspunsuri la intrebari pe care le intalnesti cand programezi
+* [codepen](https://codepen.io/) -- sunt foarte multe exemple interesante, poti coda on-line
 
 ## HTML si CSS
 * (html.com)[http://html.com/]
