@@ -9,3 +9,4 @@
 
 * [video](https://www.youtube.com/watch?v=U_RXeS4QdQ0)
 * [romana](http://ordonareavectorilor.weebly.com/interschimbare.html)
+* [vizualizare algoritm](https://free123456.000webhostapp.com/algorithms/sort/index.html)
