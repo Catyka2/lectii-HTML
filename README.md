@@ -8,6 +8,9 @@
 
 ## HTML si CSS
 * (html.com)[http://html.com/]
+* (templates w3school)[https://www.w3schools.com/w3css/w3css_templates.asp]
+* (templates)[]
+* (jquery ui)[https://jqueryui.com/] - functionalitati bune: tabs, acordion, dialog, autocomplate, slider
 ### Articole
 
 
