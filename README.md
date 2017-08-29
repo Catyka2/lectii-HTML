@@ -22,7 +22,7 @@
 * [bootstrap](https://www.w3schools.com/bootstrap/) -- librarie care faci mai usor stiluri
 
 ### Articole
-
+* [interview javascript](https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce)
 
 ### Video
 
