@@ -29,7 +29,7 @@ site exemplu: https://free123456.000webhostapp.com/php
 tutorial link: https://www.w3schools.com/php/php_mysql_connect.asp
 
 
-`
+```
 <?php
 $servername = "localhost";
 $username = "id2733849_ion";
@@ -61,7 +61,7 @@ $conn->close();
 
 ?>
 
-`
+```
 
 
 
