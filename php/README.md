@@ -24,6 +24,7 @@ db-name: id2733849_test
 
 ## conectarea la baza de date din fisier cu php
 site exemplu: https://free123456.000webhostapp.com/php
+[lectii romana video](https://www.youtube.com/watch?v=QSGVwlo__fs&index=25&list=PLRlcs-KgbzEdWyMgQ-vPiS70CaYC5ssBa)
 
 tutorial link: https://www.w3schools.com/php/php_mysql_connect.asp
 
