@@ -70,7 +70,7 @@ vector.push(punct4)
 for(var i in vector){// i va fi cheia/indexul (0,1,2,3) pentru ca avem patru elemente in vector
 	$('#lectie').append('<p> Puntul '+i+": x-"+vector[i].x+",y-"+vector[i]['y']+'</p>')//sau vector[i]['x']
 }
-
+console.log(vector)
 /*
 Exercitii:
 1. creaza o clasa Persoana cu variabilele nume, prenume, ani
@@ -79,3 +79,47 @@ Exercitii:
 4. creaza o metoda anulNaterii pentru persoana ca sa calculeze anul nasterii
 */
 
+function Persoana (nume, prenume, ani){
+	this.nume=nume;
+	this.prenume=prenume;
+	this.ani=ani;
+   
+}
+cl('ex 1')
+var persoana1 = new Persoana('Ana','Fetcu','8') // ex 1
+console.log(persoana1)
+
+var vector1=[]; //ex2
+$('#btn').click(function(){
+		var text=$("#nume1").val();
+		var text2=$("#prenume1").val();
+		var text3=$("#ani1").val();
+		var text1= new Persoana(text,text2,text3);
+		vector1.push(text);
+		vector1.push(text2);
+		vector1.push(text3);
+		console.log(text1)
+         console.log(vector1)
+})
+
+$('#btn1').click(function(){ //ex.3
+for(var i in vector1){
+	$('#rezolvare').append('<p>'+vector1[i]+'</p>')
+}
+
+})
+cl('ex 3')
+function AnulNasterii(a,b){ //ex4
+	this.a = a
+	this.b = b
+	this.diferenta = function(){
+		return this.a - this.b;
+	}
+	
+}
+$('#btn3').click(function(){
+var b = $('#ani2').val();
+var a =2017;
+var anulN = new AnulNasterii(a,b)
+console.log(anulN.diferenta())
+})
